@@ -1,3 +1,6 @@
 # Fault-Coverage-using-PRPGs
 
 The main aim of this project is to create Pseudo-Random Test Patterns [PRPGs] to perform Fault coverage analysis for a given circuit. The PRPGs are generated using a counter and Linear Feedback Shift Registers [LFSRs]. The LFSRs are further assigned with taps at different nodes to create different patterns. The functionalities of this project include Fault List Generation, Complete Fault Coverage, Test Vector Generation using Counter, and LFSRs. 
+
+Conclution:
+As the performance plots suggest the LFSR performs much better than the counter, this is because of the fact that the LFSRs generate completely random TVs and that too with dividing the entire LFRS TVs in 8-bit LFSRs would generate truly random bits which enable better fault coverage percentage. On the other hand, the counter just changes the seed by one which may not be truly random and this is shown in the performance plot. Also more the taps and more random the taps in the LFSRs the better the performance. This can be seen in the performance plot. Also, they are much better than the TV generators, as mentioned above it is because of the fact that they generate random TVs which cover a wide range of the entire TV set by consuming less time. By using TV generators we may have to generate more TVs to get the same amount of fault coverage. 
